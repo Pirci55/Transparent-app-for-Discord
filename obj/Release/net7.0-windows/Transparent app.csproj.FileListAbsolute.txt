@@ -1,0 +1,23 @@
+D:\Program\Microsoft VS\Projects\fff\bin\Release\net7.0-windows\Transparent app.exe
+D:\Program\Microsoft VS\Projects\fff\bin\Release\net7.0-windows\Transparent app.deps.json
+D:\Program\Microsoft VS\Projects\fff\bin\Release\net7.0-windows\Transparent app.runtimeconfig.json
+D:\Program\Microsoft VS\Projects\fff\bin\Release\net7.0-windows\Transparent app.dll
+D:\Program\Microsoft VS\Projects\fff\bin\Release\net7.0-windows\Transparent app.pdb
+D:\Program\Microsoft VS\Projects\fff\bin\Release\net7.0-windows\NAudio.dll
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.csproj.AssemblyReference.cache
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\MainWindow.g.cs
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\App.g.cs
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app_MarkupCompile.cache
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app_MarkupCompile.lref
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\MainWindow.baml
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.g.resources
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.AssemblyInfoInputs.cache
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.AssemblyInfo.cs
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.csproj.CoreCompileInputs.cache
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.csproj.CopyComplete
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.dll
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\refint\Transparent app.dll
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.pdb
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.genruntimeconfig.cache
+D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\ref\Transparent app.dll

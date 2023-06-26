@@ -1,0 +1,5 @@
+D:\Program\Microsoft VS\Projects\fff\obj\Debug\net7.0-windows\Transparent window.csproj.AssemblyReference.cache
+D:\Program\Microsoft VS\Projects\fff\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\Program\Microsoft VS\Projects\fff\obj\Debug\net7.0-windows\App.g.cs
+D:\Program\Microsoft VS\Projects\fff\obj\Debug\net7.0-windows\Transparent window_MarkupCompile.cache
+D:\Program\Microsoft VS\Projects\fff\obj\Debug\net7.0-windows\Transparent window_MarkupCompile.lref
