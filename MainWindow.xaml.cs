@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Media;
 using System.Numerics;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -29,16 +30,14 @@ namespace Transparent_app {
             InitializeComponent();
             var waveOutEvent = new WaveOutEvent();
             var waveInEvent = new WaveInEvent();
-            var waveFormat = new WaveFormat(96000, 32, 2);
+            var waveFormat = new WaveFormat(384000, 32, 2);
             var samples = new BufferedWaveProvider(waveFormat);
             var stream = new SampleChannel(samples);
+
+            waveOutEvent.DesiredLatency = 250;
             waveInEvent.WaveFormat = waveFormat;
-            waveInEvent.DataAvailable += (sender, e) => {
+            waveInEvent.DataAvailable += (object? sender, WaveInEventArgs e) => {
                 samples.AddSamples(e.Buffer, 0, e.BytesRecorded);
-                if (samples.BufferedBytes > 2000 && waveOutEvent.PlaybackState != PlaybackState.Playing) {
-                    waveOutEvent.Init(stream);
-                    waveOutEvent.Play();
-                };
             };
 
             inputDeviceSlider.Maximum = WaveIn.DeviceCount - 1;
@@ -53,27 +52,71 @@ namespace Transparent_app {
                 outputDeviceName.Content = "Output: " + WaveOut.GetCapabilities((int)outputDeviceSlider.Value).ProductName;
             };
 
+            stream.Volume = (float)volumeSlider.Value / 100;
             volumeName.Content = "Volume: " + (int)volumeSlider.Value + "%";
-            waveOutEvent.Volume = (float)volumeSlider.Value / 100;
             volumeSlider.ValueChanged += (object sender, RoutedPropertyChangedEventArgs<double> e) => {
-                waveOutEvent.Volume = (float)volumeSlider.Value / 100;
+                stream.Volume = (float)volumeSlider.Value / 100;
                 volumeName.Content = "Volume: " + (int)volumeSlider.Value + "%";
             };
 
+            xPosBox.TextChanged += (object sender, TextChangedEventArgs e) => {
+                try {
+                    if (xPosBox.Text.ToLower() == "auto") {
+                        Left = 0;
+                    } else {
+                        Left = int.Parse(xPosBox.Text);
+                    };
+                } catch { };
+            };
+            yPosBox.TextChanged += (object sender, TextChangedEventArgs e) => {
+                try {
+                    if (yPosBox.Text.ToLower() == "auto") {
+                        Top = 0;
+                    } else {
+                        Top = int.Parse(yPosBox.Text);
+                    };
+                } catch { };
+            };
+            widthBox.TextChanged += (object sender, TextChangedEventArgs e) => {
+                try {
+                    if (widthBox.Text.ToLower() == "auto") {
+                        Width = SystemParameters.WorkArea.Width;
+                    } else {
+                        Width = int.Parse(widthBox.Text);
+                    };
+                } catch { };
+            };
+            heigthBox.TextChanged += (object sender, TextChangedEventArgs e) => {
+                try {
+                    if (heigthBox.Text.ToLower() == "auto") {
+                        Height = Height = SystemParameters.WorkArea.Height - 1;
+                    } else {
+                        Height = int.Parse(heigthBox.Text);
+                    };
+                } catch { };
+            };
+            Left = 0;
+            Top = 0;
+            Width = SystemParameters.WorkArea.Width;
+            Height = SystemParameters.WorkArea.Height - 1;
+
             startButton.Click += (object sender, RoutedEventArgs e) => {
+                waveOutEvent.Stop();
+                waveInEvent.StopRecording();
+                samples.ClearBuffer();
+                waveOutEvent.Dispose();
+                waveInEvent.Dispose();
+                GC.Collect(0, GCCollectionMode.Forced, true);
+
                 waveOutEvent.DeviceNumber = (int)outputDeviceSlider.Value;
                 waveInEvent.DeviceNumber = (int)inputDeviceSlider.Value;
-                waveInEvent.StopRecording();
                 waveInEvent.StartRecording();
+                waveOutEvent.Init(stream);
+                waveOutEvent.Play();
             };
             showButton.Click += (object sender, RoutedEventArgs e) => { config.Opacity = 1; };
             hideButton.Click += (object sender, RoutedEventArgs e) => { config.Opacity = 0; };
             closeButton.Click += (object sender, RoutedEventArgs e) => { window.Close(); };
-
-            Top = 0;
-            Left = 0;
-            Width = SystemParameters.WorkArea.Width;
-            Height = SystemParameters.WorkArea.Height - 1;
         }
     }
 }

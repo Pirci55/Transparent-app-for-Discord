@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:fff"
         mc:Ignorable="d"
         x:Name="window"
         Title="Transparent window"
@@ -42,6 +41,8 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -60,6 +61,26 @@
                 Margin="10"/>
             <Label Content="Some volume" x:Name="volumeName"
                 Grid.Row="2" Grid.Column="0"
+                VerticalAlignment="Center"
+                Foreground="White" 
+                Margin="10"/>
+            <Label Content="X position"
+                Grid.Row="3" Grid.Column="0"
+                VerticalAlignment="Center"
+                Foreground="White" 
+                Margin="10"/>
+            <Label Content="Y position"
+                Grid.Row="4" Grid.Column="0"
+                VerticalAlignment="Center"
+                Foreground="White" 
+                Margin="10"/>
+            <Label Content="Width"
+                Grid.Row="5" Grid.Column="0"
+                VerticalAlignment="Center"
+                Foreground="White" 
+                Margin="10"/>
+            <Label Content="Height"
+                Grid.Row="6" Grid.Column="0"
                 VerticalAlignment="Center"
                 Foreground="White" 
                 Margin="10"/>
@@ -85,24 +106,48 @@
             <Slider x:Name="volumeSlider"
                 Grid.Row="2" Grid.Column="1"
                 Margin="10"
-                Value="50" 
+                Value="75" 
                 Minimum="0" 
                 Maximum="100" 
                 VerticalAlignment="Center"
                 TickPlacement="BottomRight"/>
+            <TextBox x:Name="xPosBox"
+                Grid.Row="3" Grid.Column="1"
+                Text="auto"
+                VerticalAlignment="Center"
+                Foreground="White" Background="Transparent" BorderBrush="Transparent"
+                Margin="10"/>
+            <TextBox x:Name="yPosBox"
+                Grid.Row="4" Grid.Column="1"
+                Text="auto"
+                VerticalAlignment="Center"
+                Foreground="White" Background="Transparent" BorderBrush="Transparent"
+                Margin="10"/>
+            <TextBox x:Name="widthBox"
+                Grid.Row="5" Grid.Column="1"
+                Text="auto"
+                VerticalAlignment="Center"
+                Foreground="White" Background="Transparent" BorderBrush="Transparent"
+                Margin="10"/>
+            <TextBox x:Name="heigthBox"
+                Grid.Row="6" Grid.Column="1"
+                Text="auto"
+                VerticalAlignment="Center"
+                Foreground="White" Background="Transparent" BorderBrush="Transparent"
+                Margin="10"/>
 
             <Button x:Name="startButton" Content="START AUDIO STREAM"
-                Grid.Row="6" Grid.ColumnSpan="2"
+                Grid.Row="8" Grid.ColumnSpan="2"
                 BorderBrush="#FF646464" Foreground="White" Background="Transparent"
                 Margin="10">
             </Button>
             <Button x:Name="hideButton" Content="HIDE MENU"
-                Grid.Row="7" Grid.ColumnSpan="2"
+                Grid.Row="9" Grid.ColumnSpan="2"
                 BorderBrush="#FF646464" Foreground="White" Background="Transparent"
                 Margin="10">
             </Button>
             <Button x:Name="closeButton" Content="CLOSE APP"
-                Grid.Row="8" Grid.ColumnSpan="2"
+                Grid.Row="10" Grid.ColumnSpan="2"
                 BorderBrush="#FF646464" Foreground="White" Background="Transparent"
                 Margin="10">
             </Button>

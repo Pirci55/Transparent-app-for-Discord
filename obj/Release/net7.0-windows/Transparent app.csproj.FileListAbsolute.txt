@@ -21,3 +21,25 @@ D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\refint\Transpare
 D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.pdb
 D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\Transparent app.genruntimeconfig.cache
 D:\Program\Microsoft VS\Projects\fff\obj\Release\net7.0-windows\ref\Transparent app.dll
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\bin\Release\net7.0-windows\Transparent app.exe
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\bin\Release\net7.0-windows\Transparent app.deps.json
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\bin\Release\net7.0-windows\Transparent app.runtimeconfig.json
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\bin\Release\net7.0-windows\Transparent app.dll
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\bin\Release\net7.0-windows\Transparent app.pdb
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\bin\Release\net7.0-windows\NAudio.dll
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.csproj.AssemblyReference.cache
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\MainWindow.baml
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\MainWindow.g.cs
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\App.g.cs
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app_MarkupCompile.cache
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.g.resources
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.GeneratedMSBuildEditorConfig.editorconfig
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.AssemblyInfoInputs.cache
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.AssemblyInfo.cs
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.csproj.CoreCompileInputs.cache
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.csproj.CopyComplete
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.dll
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\refint\Transparent app.dll
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.pdb
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\Transparent app.genruntimeconfig.cache
+D:\Other\Гитхаб проекты\Transparent-app-for-Discord\obj\Release\net7.0-windows\ref\Transparent app.dll

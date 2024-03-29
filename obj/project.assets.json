@@ -8,26 +8,30 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nou93\\.nuget\\packages\\": {}
+    "C:\\Users\\Guest\\.nuget\\packages\\": {},
+    "D:\\Program\\Microsoft VS\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program\\Microsoft VS\\Projects\\fff\\Transparent app.csproj",
+      "projectUniqueName": "D:\\Other\\Гитхаб проекты\\Transparent-app-for-Discord\\Transparent app.csproj",
       "projectName": "Transparent app",
-      "projectPath": "D:\\Program\\Microsoft VS\\Projects\\fff\\Transparent app.csproj",
-      "packagesPath": "C:\\Users\\nou93\\.nuget\\packages\\",
-      "outputPath": "D:\\Program\\Microsoft VS\\Projects\\fff\\obj\\",
+      "projectPath": "D:\\Other\\Гитхаб проекты\\Transparent-app-for-Discord\\Transparent app.csproj",
+      "packagesPath": "C:\\Users\\Guest\\.nuget\\packages\\",
+      "outputPath": "D:\\Other\\Гитхаб проекты\\Transparent-app-for-Discord\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program\\Microsoft VS\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nou93\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Guest\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
